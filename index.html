@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ady's Trades</title>
     <style>
+        html {
+            height: 100%;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            height: 100%;
+            background-image: url('banner-image.jpg'); /* Replace with your image path */
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
             color: #333;
         }
         .container {
@@ -60,14 +68,20 @@
         .banner {
             padding: 80px 0;
             color: #d35400;
-            background: url('banner-image.jpg') no-repeat 0px -600px;
             text-align: center;
+            background: none; /* Remove background from banner since it's now on the body */
         }
         .banner h1 {
             font-size: 2em;
         }
         .banner p {
             font-size: 1.2em;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
 </head>
